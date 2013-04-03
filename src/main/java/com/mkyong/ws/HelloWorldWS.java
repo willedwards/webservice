@@ -12,14 +12,14 @@ public class HelloWorldWS{
 	Car car;
 
 	@WebMethod(exclude=true)
-	public void setMake(Car car) {
+	public void setCar(Car car) {
 		this.car = car;
 	}
 
-	@WebMethod(operationName="getHelloWorld")
-	public String getHelloWorld() {
+	@WebMethod(operationName="getModel")
+	public String getModel() {
 		
-		return car.getHelloWorld();
+		return car.getModel();
 		
 	}
  

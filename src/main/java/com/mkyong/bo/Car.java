@@ -3,6 +3,6 @@ package com.mkyong.bo;
 public interface Car
 {
 
-	String getHelloWorld();
+	String getModel();
 	
 }

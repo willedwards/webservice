@@ -11,17 +11,17 @@
         http://jax-ws.dev.java.net/spring/servlet.xsd"
 >
  
-    <wss:binding url="/hello">
+    <wss:binding url="/car">
         <wss:service>
-            <ws:service bean="#helloWs"/>
+            <ws:service bean="#carWs"/>
         </wss:service>
     </wss:binding>
 
     <!-- Web service methods -->
-    <bean id="helloWs" class="com.mkyong.ws.HelloWorldWS">
-    	<property name="make" ref="HelloWorldBo" />
+    <bean id="carWs" class="com.mkyong.ws.HelloWorldWS">
+    	<property name="car" ref="carBo" />
     </bean>
     
-    <bean id="HelloWorldBo" class="com.mkyong.bo.impl.HelloWorldBoImpl" />
+    <bean id="carBo" class="com.mkyong.bo.impl.RollsRoyce" />
     
 </beans>
