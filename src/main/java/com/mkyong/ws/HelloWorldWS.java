@@ -1,25 +1,25 @@
 package com.mkyong.ws;
 
+import com.mkyong.bo.Car;
+
 import javax.jws.WebMethod;
 import javax.jws.WebService;
-
-import com.mkyong.bo.HelloWorldBo;
 
 @WebService
 public class HelloWorldWS{
 
 	//DI via Spring
-	HelloWorldBo helloWorldBo;
+	Car car;
 
 	@WebMethod(exclude=true)
-	public void setHelloWorldBo(HelloWorldBo helloWorldBo) {
-		this.helloWorldBo = helloWorldBo;
+	public void setMake(Car car) {
+		this.car = car;
 	}
 
 	@WebMethod(operationName="getHelloWorld")
 	public String getHelloWorld() {
 		
-		return helloWorldBo.getHelloWorld();
+		return car.getHelloWorld();
 		
 	}
  

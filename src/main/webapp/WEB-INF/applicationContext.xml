@@ -19,7 +19,7 @@
 
     <!-- Web service methods -->
     <bean id="helloWs" class="com.mkyong.ws.HelloWorldWS">
-    	<property name="helloWorldBo" ref="HelloWorldBo" />
+    	<property name="make" ref="HelloWorldBo" />
     </bean>
     
     <bean id="HelloWorldBo" class="com.mkyong.bo.impl.HelloWorldBoImpl" />
