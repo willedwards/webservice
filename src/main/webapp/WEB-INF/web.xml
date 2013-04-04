@@ -15,7 +15,7 @@
 
     <servlet-mapping>
            <servlet-name>jaxws-servlet</servlet-name>
-           <url-pattern>/car</url-pattern>
+           <url-pattern>/carService</url-pattern>
        </servlet-mapping>
 
     <!-- Register Spring Listener -->

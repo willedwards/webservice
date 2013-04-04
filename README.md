@@ -8,4 +8,4 @@ this can be built using
 
 Then deploy the war into Tomcat
 
-Then see the webservice at : http://localhost:8080/car
+Then see the webservice at : http://localhost:8080/carService

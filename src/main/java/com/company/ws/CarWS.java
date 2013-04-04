@@ -2,7 +2,7 @@ package com.company.ws;
 
 
 import com.company.Petrol;
-import com.company.api.Car;
+import com.company.api.CarService;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
@@ -10,27 +10,27 @@ import javax.jws.WebService;
 @WebService
 public class CarWS
 {
-	private Car car;
+	private CarService carService;
 
 	@WebMethod(exclude=true)
-	public void setCar(Car car) {
-		this.car = car;
+	public void setCarService(CarService carService) {
+		this.carService = carService;
 	}
 
 	@WebMethod(operationName="getModel")
 	public String getModel() {
-		return car.getModel();
+		return carService.getModel();
 	}
 
     @WebMethod(operationName="addPetrol")
    	public void addPetrol(Petrol petrol) {
-        car.addPetrol(petrol);
+        carService.addPetrol(petrol);
    	}
 
     @WebMethod
     public Boolean isFull()
     {
-        return car.isFull();
+        return carService.isFull();
     }
 
 }

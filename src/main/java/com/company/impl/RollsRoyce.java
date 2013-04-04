@@ -2,9 +2,9 @@ package com.company.impl;
 
 
 import com.company.Petrol;
-import com.company.api.Car;
+import com.company.api.CarService;
 
-public class RollsRoyce implements Car
+public class RollsRoyce implements CarService
 {
     private static final Double MAX_FUEL_CAPACITY = 120.0;
 

@@ -11,7 +11,7 @@
         http://jax-ws.dev.java.net/spring/servlet.xsd"
 >
  
-    <wss:binding url="/car">
+    <wss:binding url="/carService">
         <wss:service>
             <ws:service bean="#carWs"/>
         </wss:service>
@@ -19,10 +19,11 @@
 
     <!-- Web service methods -->
     <bean id="carWs" class="com.company.ws.CarWS">
-    	<property name="car" ref="carBo" />
+    	<property name="carService" ref="rollsRoyceService" />
     </bean>
 
-    <bean id="carBo" class="com.company.impl.RollsRoyce" />
+    <!-- This could be a complex bean that accesses databases or whatever -->
+    <bean id="rollsRoyceService" class="com.company.impl.RollsRoyce" />
 
 
 

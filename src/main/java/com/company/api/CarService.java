@@ -2,7 +2,7 @@ package com.company.api;
 
 import com.company.Petrol;
 
-public interface Car
+public interface CarService
 {
 
 	String getModel();
