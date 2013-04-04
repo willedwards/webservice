@@ -18,10 +18,10 @@
     </wss:binding>
 
     <!-- Web service methods -->
-    <bean id="carWs" class="com.mkyong.ws.HelloWorldWS">
+    <bean id="carWs" class="com.company.ws.CarWS">
     	<property name="car" ref="carBo" />
     </bean>
     
-    <bean id="carBo" class="com.mkyong.bo.impl.RollsRoyce" />
+    <bean id="carBo" class="com.company.impl.RollsRoyce" />
     
 </beans>
