@@ -24,15 +24,6 @@
     
     <bean id="carBo" class="com.company.impl.RollsRoyce" />
 
-    <bean id="accountService" class="com.company.impl.AccountServiceImpl" />
 
-    <bean class="org.springframework.remoting.jaxws.SimpleJaxWsServiceExporter">
-        <property name="baseAddress" value="http://localhost:8080/"/>
-    </bean>
-
-    <!-- this contains @WebService(serviceName="AccountService")
-        it also autowires the accountService interface inside it
-    -->
-    <bean id="accountServiceEndpoint" class="com.company.AccountServiceEndpoint" />
 
 </beans>
