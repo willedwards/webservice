@@ -27,12 +27,12 @@
     <bean id="accountService" class="com.company.impl.AccountServiceImpl" />
 
     <bean class="org.springframework.remoting.jaxws.SimpleJaxWsServiceExporter">
-        <property name="baseAddress" value="http://localhost:8080/"/>
+        <property name="baseAddress" value="http://localhost:8080/account"/>
     </bean>
 
     <!-- this contains @WebService(serviceName="AccountService")
         it also autowires the accountService interface inside it
     -->
-    <bean id="accountServiceEndpoint" class="com.company.AccountServiceEndpoint" />
+    <bean id="accountServiceEndpoint" class="com.company.ws.AccountServiceEndpoint" />
 
 </beans>

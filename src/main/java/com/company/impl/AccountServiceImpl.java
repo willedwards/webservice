@@ -1,7 +1,7 @@
 package com.company.impl;
 
-import com.company.Account;
 import com.company.api.AccountService;
+import com.company.bo.Account;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;

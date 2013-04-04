@@ -1,6 +1,7 @@
 package com.company.api;
 
-import com.company.Account;
+
+import com.company.bo.Account;
 
 import java.util.List;
 
