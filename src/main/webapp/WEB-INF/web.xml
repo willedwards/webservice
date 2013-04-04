@@ -12,12 +12,24 @@
     		com.sun.xml.ws.transport.http.servlet.WSSpringServlet
     	</servlet-class>
   	</servlet>
-	
-	<servlet-mapping>
-        <servlet-name>jaxws-servlet</servlet-name>
-        <url-pattern>/car</url-pattern>
-    </servlet-mapping>
- 
+
+	<servlet>
+    	<servlet-name>jaxws-account-servlet</servlet-name>
+    	<servlet-class>
+    		com.sun.xml.ws.transport.http.servlet.WSSpringServlet
+    	</servlet-class>
+  	</servlet>
+
+    <servlet-mapping>
+           <servlet-name>jaxws-servlet</servlet-name>
+           <url-pattern>/car</url-pattern>
+       </servlet-mapping>
+
+    <servlet-mapping>
+           <servlet-name>jaxws-account-servlet</servlet-name>
+           <url-pattern>/account</url-pattern>
+       </servlet-mapping>
+
     <!-- Register Spring Listener -->
   	<listener>
     	<listener-class>
