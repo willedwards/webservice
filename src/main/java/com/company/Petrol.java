@@ -6,8 +6,8 @@ package com.company;/**
 
 import java.io.Serializable;
 
-public class Account implements Serializable
+public class Petrol implements Serializable
 {
     //This is the equivalent of set/get
-    public String name;
+    public Double litres;
 }

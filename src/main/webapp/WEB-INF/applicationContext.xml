@@ -21,7 +21,7 @@
     <bean id="carWs" class="com.company.ws.CarWS">
     	<property name="car" ref="carBo" />
     </bean>
-    
+
     <bean id="carBo" class="com.company.impl.RollsRoyce" />
 
 
