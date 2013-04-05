@@ -10,4 +10,6 @@ public interface CarService
     void addPetrol(Petrol petrol);
 
     Boolean isFull();
+
+    void drainTank();
 }

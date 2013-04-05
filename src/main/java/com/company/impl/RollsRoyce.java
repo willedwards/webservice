@@ -10,23 +10,30 @@ public class RollsRoyce implements CarService
 
     private Double currentFuelLevel = 0.0;
 
-	public String getModel(){
-		return "Bently";
-	}
+    public String getModel()
+    {
+        return "Bentley";
+    }
 
     @Override
     public void addPetrol(Petrol petrol)
     {
         currentFuelLevel += petrol.litres;
 
-        if(currentFuelLevel > MAX_FUEL_CAPACITY)
+        if (currentFuelLevel > MAX_FUEL_CAPACITY)
             currentFuelLevel = MAX_FUEL_CAPACITY;
     }
 
     @Override
     public Boolean isFull()
     {
-        return (currentFuelLevel == MAX_FUEL_CAPACITY);
+        return (Double.compare(currentFuelLevel, MAX_FUEL_CAPACITY) == 0);
+    }
+
+    @Override
+    public void drainTank()
+    {
+        currentFuelLevel = 0.0;
     }
 
 }
